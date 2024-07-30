@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/registration.css">
+</head>
+<body>
+    <h2>测评模式-信息登记</h2>
+
+    <form action="/submit-your-form" method="post"> 
+        <div class="registration-info"> 
+            <!-- 姓名字段 -->  
+            <label for="name">姓名:</label><br>  
+            <input type="text" id="name" name="name" required><br>  
+        
+            <!-- 性别字段，通过单选按钮实现 -->  
+            <label>性别:</label><br>  
+            <div class="gender-selection">  
+                <label class="gender-label" for="male">  
+                    <span>男</span>  
+                    <input type="radio" id="male" name="gender" value="male" required>  
+                </label>  
+                <label class="gender-label" for="female">  
+                    <span>女</span>  
+                    <input type="radio" id="female" name="gender" value="female">  
+                </label>
+                <label class="gender-label" for="reluctant">
+                    <span>不愿透露</span>
+                    <input type="radio" id="reluctant" name="gender" value="null">
+                </label>
+            </div>
+        
+            <!-- 年龄字段 -->  
+            <label for="age">年龄:</label><br>  
+            <input type="number" id="age" name="age" min="0" max="99">
+            <span>岁</span><br>
+        </div> 
+      
+        <!-- 提交按钮 -->
+         <div class="submit-container">
+            <input type="submit" value="提交" class="submit-button">  
+         </div>
+    </form>  
+</body>
+</html>

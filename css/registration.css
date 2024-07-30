@@ -1,0 +1,109 @@
+/* 基本样式重置 */  
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 20px;  
+    background-color: rgba(255, 179, 0, 0.603);  
+    color: #333;  
+}  
+  
+h2 {  
+    color: #fff;  
+    text-align: center;
+    font-size: 50px;
+}  
+  
+/* 表单样式 */  
+form {  
+    background-color: #fff;  
+    padding: 20px;  
+    border-radius: 8px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    max-width: 800px;  
+    margin: 0 auto;  
+}
+
+.registration-info{
+    padding: 20px;
+}
+  
+/* 标签和输入框样式 */  
+label {  
+    display: block;  
+    margin-bottom: 10px;  
+    font-weight: bold;  
+}  
+  
+input[type="text"]{  
+    width: 100%;  
+    padding: 8px;  
+    margin-bottom: 15px;  
+    box-sizing: border-box; /* 包括padding和border在width内 */  
+    border: 1px solid #ccc;  
+    border-radius: 4px;  
+}  
+  
+
+
+/*性别登记样式*/
+/* 性别单选按钮的容器样式，使用Flexbox */  
+.gender-selection {  
+    display: flex;  
+    align-items: center; /* 垂直居中对齐 */  
+    margin-bottom: 20px; /* 与下方元素保持间距 */  
+}  
+  
+.gender-label {  
+    display: flex; /* 使label内部的内容也使用Flexbox布局 */  
+    flex-direction: column; /* 子元素垂直排列 */  
+    align-items: flex-start; /* 子元素在交叉轴上的起点对齐 */  
+    margin-right: 120px; /* 与下一个单选按钮保持间距 */  
+} 
+
+.gender-label:hover{
+    cursor: pointer;
+}
+
+/*选项字体设置*/
+span{
+    font-weight: 500;
+}
+
+/* 单选按钮样式调整 */  
+.gender-label input[type="radio"] {  
+    width: auto; /* 恢复到默认宽度 */  
+    margin-right: 5px; /* 与标签之间留点空间 */  
+    margin-top: 10px;
+} 
+
+/*年龄输入*/
+input[type="number"]{  
+    width: 30%;  
+    padding: 8px;  
+    margin-bottom: 15px;  
+    box-sizing: border-box; /* 包括padding和border在width内 */  
+    border: 1px solid #ccc;  
+    border-radius: 4px;  
+}  
+  
+/* 提交按钮的样式 */  
+.submit-button {  
+    width: 500px; /* 增加宽度 */  
+    /* 其他样式，如背景色、边框等（可选） */  
+    background-color: orange;  
+    color: white;  
+    border: none;  
+    padding: 10px 20px;  
+    text-align: center;  
+    cursor: pointer;  
+}  
+
+/* 提交按钮容器的样式，用于居中提交按钮 */  
+.submit-container {  
+    text-align: center; /* 使容器内的内容水平居中 */  
+    margin-top: 20px; /* 与上方元素保持间距（可选） */  
+}  
+  
+.submit-button:hover {  
+    background-color: orangered; /* 鼠标悬停时颜色变深 */  
+}

@@ -1,0 +1,126 @@
+/*背景设置*/
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 179, 0, 0.603);
+}
+/*登录框大小背景设置*/
+.login-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 410px;
+    padding: 30px;
+}
+/*登录标题设置*/
+.login-box .text{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    color: orangered;
+}
+.login-box form{
+    margin-top: -20px;
+}
+/*信息输入框的设置*/
+.login-box form .Account-Information{
+    height: 45px;
+    width: 100%;
+    margin: 40px 0;
+}
+/*输入信息提示*/
+form .Account-Information label{
+    font-size: 18px;
+}
+/*信息输入*/
+form .Account-Information input{
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 1px solid silver;
+}
+/*信息输入时输入板背景闪烁*/
+form .Account-Information input:focus{
+    border-color: orange;
+    border-width: 2px;
+}
+/*忘记密码设置*/
+form .forgot-password{
+    margin-top: -8px;
+}
+/*忘记密码字体设置*/
+form .forgot-password a{
+    text-decoration: none;
+}
+/*鼠标移动到忘记密码时有下划线*/
+form .forgot-password a:hover{
+    text-decoration: underline;
+}
+/*登录确定的大小设置*/
+form .btn{
+    margin: 30px 0;
+    height:  45px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+/*登录确认背景设置*/
+form .btn .inner{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    z-index: -1;
+}
+form .btn:hover .inner{
+    left 0;
+}
+/*输入信息确定登录*/
+form .btn button{
+    height: 100%;
+    width: 100%;
+    background: orangered;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+/*注册位置设置*/
+form .signup-link{
+    text-align: center;
+}
+/*注册字体设置*/
+form .signup-link a{
+    color: orangered;
+    text-decoration: none;
+}
+/*注册的下划线*/
+form .signup-link a:hover{
+    text-decoration: underline;
+}
+
+/*测评入口位置设置*/
+form .enter{
+    text-align: right;
+}
+/*测评入口字体设置*/
+.button-style{
+    display: inline-block; /* 让链接表现得像块级元素，以便设置宽度和高度 */
+    padding: 10px 20px; /* 设置内边距，让文字不会紧贴边框 */
+    background-color: orange;
+    color: #fff;
+    border: 1px solid orange; /* 设置边框，这里边框颜色和背景颜色相同 */  
+    border-radius: 5px; /* 设置边框圆角 */  
+    transition: background-color 0.3s ease; /* 可选：添加背景颜色过渡效果 */ 
+    text-decoration: none;
+    cursor: pointer;
+}
+.button-style:hover {  
+    background-color: rgba(255, 179, 0, 0.603); /* 鼠标悬停时改变背景颜色，加深蓝色调 */  
+}
